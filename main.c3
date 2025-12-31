@@ -25,4 +25,3 @@ linkedlist::append{float}(&float_head, 1.1);
     linkedlist::print_list{float}(float_head);
     linkedlist::free_list{float}(float_head);
 
-}
