@@ -7,8 +7,9 @@ Project Structure:
 - 'main.c3': A sample file to demonstrate the usage of the linked list module.
 Getting Started:
 To use the linked list module, simply import the `linkedlist.c3` file in your C3 project. You can create a linked list, add elements, remove elements, and traverse the list using the provided functions.
-Example Usage:
-```c3c compile-run ./main.c3 ./linkedlist.c3
+How to compile:
+```
+c3c compile-run ./main.c3 ./linkedlist.c3
 ```
 This command compiles and runs the `main.c3` file along with the `linkedlist.c3` module.
 Contributing:
