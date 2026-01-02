@@ -1,6 +1,5 @@
 module linkedlist @generic(Type);
 import std::io;
-import std::core;
 
 
 struct Node{
@@ -39,7 +38,7 @@ fn void remove(Node** head, Type value) {
     if ((*head).value == value) {
         Node* temp = *head;
         *head = (*head).next;
-        mem::free(temp);
+        free(temp);
         return;
     }
     
@@ -51,7 +50,7 @@ fn void remove(Node** head, Type value) {
     if (current.next != null) {
         Node* temp = current.next;
         current.next = current.next.next;
-        mem::free(temp);
+        free(temp);
     }
 }
 
@@ -77,6 +76,3 @@ fn void free_list(Node* head) {
 
 
 
-fn void test() {
-    io::printn("Hello, LinkedList Module!");
-}
